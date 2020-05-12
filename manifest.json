@@ -1,0 +1,9 @@
+{
+  "domain": "senec_home",
+  "name": "SENEC.Home",
+  "config_flow": false,
+  "documentation": "https://www.home-assistant.io/integrations/senec",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@martenso"]
+}
