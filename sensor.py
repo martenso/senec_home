@@ -58,15 +58,15 @@ class SenecSensor(RestoreEntity):
         """Return the polling requirement for this sensor."""
         return False
 
-    @property
-    def device_state_attributes(self):
-        """Return the state attributes."""
-        if self.type != "stat_state":
-            return {}
-        attr = {
-            "Version": self._data["BMS"]["MODULE_COUNT"],
-        }
-        return attr
+#    @property
+#    def device_state_attributes(self):
+#        """Return the state attributes."""
+#        if self.type != "stat_state":
+#            return {}
+#        attr = {
+#            "Version": self._data["BMS"]["MODULE_COUNT"],
+#        }
+#        return attr
 
     async def async_added_to_hass(self):
         """Handle entity which will be added."""
